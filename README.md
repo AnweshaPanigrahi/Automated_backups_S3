@@ -34,12 +34,12 @@ This project provides a simple way to **back up a MongoDB database** and upload 
 
 3. Make the script executable:
    ```bash
-   chmod +x backup.sh
+   chmod +x backup_mongo.sh
    ```
 
 4. Run the backup script:
    ```bash
-   ./backup.sh
+   ./backup_mongo.sh
    ```
 
 ## ⏰ Automating with Cron
