@@ -19,7 +19,21 @@ This project provides a simple way to **back up a MongoDB database** and upload 
 ## ⚙️ Prerequisites
 - **MongoDB tools** installed (`mongodump`)  
 - **AWS CLI** configured (`aws configure`) with valid credentials  
-- An **S3 bucket** created for storing backups  
+- An **S3 bucket** created for storing backups
+
+Install Mongo
+1. Commands to install mongo:
+   ```
+   echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] \
+https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | \
+sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+
+sudo apt update
+sudo apt install -y mongodb-org
+sudo systemctl start mongod
+sudo systemctl enable mongod
+
+   ```
 
 ## 🛠️ Setup
 1. Clone this repo:
